@@ -1,29 +1,24 @@
-#include "../Include/ClapTrap.hpp"
+#include "../Include/FragTrap.hpp"
 
 int	main( void )
 {
-	std::cout << "~~~~~~~~~~~~~~~ ClapTrap constructor ~~~~~~~~~~~~~~~" << std::endl << std::endl;
+	std::cout << "~~~~~~~~~~~~~~~ FragTrap constructor ~~~~~~~~~~~~~~~" << std::endl << std::endl;
 	std::cout << "default constructor:" << std::endl;
-	ClapTrap clap;
+	FragTrap frag;
 	std::cout << std::endl;
 
 	std::cout << "constructor with name:" << std::endl;
-	ClapTrap bob("Bob");
+	FragTrap bob("bob");
 	std::cout << std::endl;
 
 	std::cout << "copy constructor:" << std::endl;
-	ClapTrap trap = clap;
+	FragTrap trap = frag;
 	std::cout << std::endl << std::endl << std::endl;
 
 
 
-	std::cout << "~~~~~~~~~~~~~~~ Attacking ~~~~~~~~~~~~~~~~~~~~~~~~~~" << std::endl << std::endl;
-	std::cout << "bob have " << bob.getEnergy() << " energy" << std::endl;
-	bob.setAttack(3);
-	bob.attack("neighbor");
-	bob.setAttack(5);
-	bob.attack("neighbor");
-	std::cout << "bob have " << bob.getEnergy() << " energy" << std::endl;
+	std::cout << "~~~~~~~~~~~~~~~ Giving high five ~~~~~~~~~~~~~~~~~~~" << std::endl << std::endl;
+	bob.highFivesGuys();
 	std::cout << std::endl << std::endl << std::endl;
 
 
@@ -42,6 +37,6 @@ int	main( void )
 
 
 
-	std::cout << "~~~~~~~~~~~~~~~ ClapTrap destructor ~~~~~~~~~~~~~~~~" << std::endl << std::endl;
+	std::cout << "~~~~~~~~~~~~~~~ FragTrap destructor ~~~~~~~~~~~~~~~~" << std::endl << std::endl;
 	return (0);
 }

@@ -1,18 +1,19 @@
 #include "../Include/ClapTrap.hpp"
+#include "../Include/ScavTrap.hpp"
 
 int	main( void )
 {
-	std::cout << "~~~~~~~~~~~~~~~ ClapTrap constructor ~~~~~~~~~~~~~~~" << std::endl << std::endl;
+	std::cout << "~~~~~~~~~~~~~~~ ScavTrap constructor ~~~~~~~~~~~~~~~" << std::endl << std::endl;
 	std::cout << "default constructor:" << std::endl;
-	ClapTrap clap;
+	ScavTrap scav;
 	std::cout << std::endl;
 
 	std::cout << "constructor with name:" << std::endl;
-	ClapTrap bob("Bob");
+	ScavTrap bob("bob");
 	std::cout << std::endl;
 
 	std::cout << "copy constructor:" << std::endl;
-	ClapTrap trap = clap;
+	ScavTrap trap = scav;
 	std::cout << std::endl << std::endl << std::endl;
 
 
@@ -42,6 +43,12 @@ int	main( void )
 
 
 
-	std::cout << "~~~~~~~~~~~~~~~ ClapTrap destructor ~~~~~~~~~~~~~~~~" << std::endl << std::endl;
+	std::cout << "~~~~~~~~~~~~~~~ Guard gate ~~~~~~~~~~~~~~~~~~~~~~~~~" << std::endl << std::endl;
+	bob.guardGate();
+	std::cout << std::endl << std::endl << std::endl;
+
+
+
+	std::cout << "~~~~~~~~~~~~~~~ ScavTrap destructor ~~~~~~~~~~~~~~~~" << std::endl << std::endl;
 	return (0);
 }
