@@ -5,6 +5,11 @@
 
 class ScavTrap: public ClapTrap
 {
+	protected:
+		static const int defaultHp = 100;
+		static const int defaultEnergy = 50;
+		static const int defaultAttack = 20;
+
 	public:
 		// Constructors
 		ScavTrap();

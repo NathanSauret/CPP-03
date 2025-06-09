@@ -17,6 +17,16 @@ int	main( void )
 
 
 
+	std::cout << "~~~~~~~~~~~~~~~ Show default values ~~~~~~~~~~~~~~~~~~" << std::endl << std::endl;
+
+	std::cout << "hp: " << bob.getHp() << std::endl;
+	std::cout << "energy: " << bob.getEnergy() << std::endl;
+	std::cout << "attack: " << bob.getAttack() << std::endl;
+	
+	std::cout << std::endl << std::endl << std::endl;
+
+
+
 	std::cout << "~~~~~~~~~~~~~~~ Giving high five ~~~~~~~~~~~~~~~~~~~" << std::endl << std::endl;
 	bob.highFivesGuys();
 	std::cout << std::endl << std::endl << std::endl;

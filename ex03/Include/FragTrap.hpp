@@ -1,10 +1,15 @@
 #ifndef FRAGTRAP_HPP
 #define FRAGTRAP_HPP
 
-#include "../Include/ClapTrap.hpp"
+#include "ClapTrap.hpp"
 
-class FragTrap: public ClapTrap
+class FragTrap: virtual public ClapTrap
 {
+	protected:
+		static const int defaultHp = 100;
+		static const int defaultEnergy = 100;
+		static const int defaultAttack = 30;
+
 	public:
 		// Constructors
 		FragTrap();
@@ -12,7 +17,7 @@ class FragTrap: public ClapTrap
 		FragTrap( std::string name );
 
 		// Destructor
-		virtual	~FragTrap();
+		~FragTrap();
 
 		// Operator overload
 		FragTrap	&operator=( const FragTrap &src );

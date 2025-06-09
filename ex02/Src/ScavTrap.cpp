@@ -3,9 +3,9 @@
 // Default constructor
 ScavTrap::ScavTrap() : ClapTrap()
 {
-	_hp = 100;
-	_energy = 50;
-	_attack = 50;
+	_hp = defaultHp;
+	_energy = defaultEnergy;
+	_attack = defaultAttack;
 	std::cout << "ScavTrap default constructor called" << std::endl;
 }
 
@@ -13,21 +13,22 @@ ScavTrap::ScavTrap() : ClapTrap()
 ScavTrap::ScavTrap(const ScavTrap &toCopy) : ClapTrap()
 {
 	std::cout << "ScavTrap Copy Constructor called" << std::endl;
+	*this = toCopy;
 }
 
 // Constructor with name
 ScavTrap::ScavTrap( std::string name ) : ClapTrap( name )
 {
-	_hp = 100;
-	_energy = 50;
-	_attack = 50;
+	_hp = defaultHp;
+	_energy = defaultEnergy;
+	_attack = defaultAttack;
 	std::cout << "ScavTrap constructor with the name " << _name << " called" << std::endl;
 }
 
 // Destructors
 ScavTrap::~ScavTrap()
 {
-	std::cout << "ScavTrap Destructor called" << std::endl;
+	std::cout << "ScavTrap Destructor called for " << _name << std::endl;
 }
 
 

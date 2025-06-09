@@ -5,7 +5,8 @@ CFLAGS	= -Wall -Werror -Wextra -std=c++98 -Wshadow -Wno-shadow
 SRC =	Src/main.cpp	\
 		Src/ClapTrap.cpp	\
 		Src/ScavTrap.cpp	\
-		Src/FragTrap.cpp
+		Src/FragTrap.cpp	\
+		Src/DiamondTrap.cpp
 
 OBJ = $(SRC:.cpp=.o)
 

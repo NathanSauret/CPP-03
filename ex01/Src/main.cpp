@@ -17,12 +17,20 @@ int	main( void )
 	std::cout << std::endl << std::endl << std::endl;
 
 
+	
+	std::cout << "~~~~~~~~~~~~~~~ Show default values ~~~~~~~~~~~~~~~~~~" << std::endl << std::endl;
+
+	std::cout << "hp: " << bob.getHp() << std::endl;
+	std::cout << "energy: " << bob.getEnergy() << std::endl;
+	std::cout << "attack: " << bob.getAttack() << std::endl;
+	
+	std::cout << std::endl << std::endl << std::endl;
+
+
 
 	std::cout << "~~~~~~~~~~~~~~~ Attacking ~~~~~~~~~~~~~~~~~~~~~~~~~~" << std::endl << std::endl;
 	std::cout << "bob have " << bob.getEnergy() << " energy" << std::endl;
-	bob.setAttack(3);
 	bob.attack("neighbor");
-	bob.setAttack(5);
 	bob.attack("neighbor");
 	std::cout << "bob have " << bob.getEnergy() << " energy" << std::endl;
 	std::cout << std::endl << std::endl << std::endl;

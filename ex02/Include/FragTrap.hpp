@@ -5,6 +5,11 @@
 
 class FragTrap: public ClapTrap
 {
+	protected:
+		static const int defaultHp = 100;
+		static const int defaultEnergy = 100;
+		static const int defaultAttack = 30;
+
 	public:
 		// Constructors
 		FragTrap();

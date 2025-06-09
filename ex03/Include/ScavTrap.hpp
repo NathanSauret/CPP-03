@@ -1,10 +1,15 @@
 #ifndef SCAVTRAP_HPP
 #define SCAVTRAV_HPP
 
-#include "../Include/ClapTrap.hpp"
+#include "ClapTrap.hpp"
 
-class ScavTrap: public ClapTrap
+class ScavTrap: virtual public ClapTrap
 {
+	protected:
+		static const int defaultHp = 100;
+		static const int defaultEnergy = 50;
+		static const int defaultAttack = 20;
+
 	public:
 		// Constructors
 		ScavTrap();
@@ -12,7 +17,7 @@ class ScavTrap: public ClapTrap
 		ScavTrap( std::string name );
 
 		// Destructor
-		virtual	~ScavTrap();
+		~ScavTrap();
 
 		// Operator overload
 		ScavTrap	&operator=( const ScavTrap &src );
